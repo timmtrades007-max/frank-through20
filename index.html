@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>THROUGH·20 — Brief for Frank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{--ink:#1a1612;--paper:#f3eee6;--ash:#8a8074;--brass:#b08a4a;--brass-hot:#d4a85a;--good:#2f6b4f;--warn:#9a5b1a;--bad:#8b3a2f;--panel:rgba(255,252,247,.94);--shadow:0 24px 60px rgba(26,22,18,.12);--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Outfit,system-ui,sans-serif;color:var(--ink);background:radial-gradient(1200px 600px at 10% -10%,#ebe3d6,transparent 60%),linear-gradient(180deg,#f7f2ea,#e7dfd2);line-height:1.45}
+a{color:inherit}button{font:inherit;cursor:pointer;border:0;background:none}
+.wrap{width:min(1180px,calc(100% - 2rem));margin-inline:auto}
+.hero{position:relative;min-height:88vh;display:grid;align-items:end;overflow:hidden;color:#f7f1e8;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:linear-gradient(105deg,rgba(18,14,10,.84),rgba(18,14,10,.35) 48%,rgba(18,14,10,.55)),radial-gradient(ellipse at 70% 40%,rgba(176,138,74,.28),transparent 50%),url("assets/slab-calacatta-gold.jpg") center/cover;animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.04)}to{transform:scale(1.08) translateY(-1%)}}
+.hero-inner{padding:clamp(2rem,6vw,5rem) 0 clamp(3rem,7vw,5.5rem)}
+.brand{font-family:Fraunces,Georgia,serif;font-size:clamp(3rem,8.5vw,6.8rem);font-weight:700;letter-spacing:-.03em;line-height:.92;margin-bottom:1rem;opacity:0;animation:rise .9s .1s ease forwards}
+.brand span{color:var(--brass-hot)}
+.hero h1{max-width:18ch;font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(1.3rem,2.5vw,1.9rem);margin-bottom:.7rem;opacity:0;animation:rise .9s .25s ease forwards}
+.hero .lead{max-width:40ch;color:rgba(247,241,232,.78);font-weight:300;margin-bottom:1.6rem;opacity:0;animation:rise .9s .4s ease forwards}
+.cta-row{display:flex;flex-wrap:wrap;gap:.7rem;opacity:0;animation:rise .9s .55s ease forwards}
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.85rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:500;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--brass-hot);color:#1a1612}
+.btn-ghost{background:rgba(255,255,255,.08);color:#f7f1e8;border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px)}
+.btn-dark{background:var(--ink);color:var(--paper)}
+.btn-line{border:1px solid rgba(26,22,18,.15);color:var(--ink)}
+.meta-chip{position:absolute;top:1.2rem;right:1.2rem;padding:.55rem .9rem;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.15);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;backdrop-filter:blur(10px);opacity:0;animation:rise .8s .7s ease forwards}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.dock{position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);background:rgba(243,238,230,.85);border-bottom:1px solid rgba(26,22,18,.08)}
+.dock-inner{display:flex;gap:.35rem;overflow-x:auto;padding:.7rem 0;scrollbar-width:none}
+.dock-inner::-webkit-scrollbar{display:none}
+.dock a{white-space:nowrap;text-decoration:none;padding:.55rem .9rem;border-radius:999px;font-size:.86rem;color:var(--ash);font-weight:500}
+.dock a:hover,.dock a.active{background:var(--ink);color:var(--paper)}
+section{padding:clamp(2.4rem,5vw,4.2rem) 0}
+.kicker{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:.45rem}
+.title{font-family:Fraunces,Georgia,serif;font-size:clamp(1.7rem,3.4vw,2.5rem);letter-spacing:-.02em;margin-bottom:.45rem}
+.sub{color:var(--ash);max-width:58ch;margin-bottom:1.5rem}
+.specbar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.pill{padding:.42rem .8rem;border-radius:999px;background:#1a1612;color:#f3eee6;font-size:.8rem;font-weight:500}
+.pill.soft{background:rgba(26,22,18,.06);color:var(--ink)}
+.pill.ok{background:rgba(47,107,79,.14);color:var(--good)}
+.pill.no{background:rgba(139,58,47,.12);color:var(--bad)}
+.pill.warn{background:rgba(154,91,26,.12);color:var(--warn)}
+.checklist{display:grid;grid-template-columns:repeat(5,1fr);gap:.7rem}
+@media(max-width:980px){.checklist{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.checklist{grid-template-columns:1fr}}
+.check{background:var(--panel);border:1px solid rgba(26,22,18,.08);border-radius:var(--radius);padding:1.05rem;box-shadow:var(--shadow)}
+.check .q{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ash);font-weight:600;margin-bottom:.45rem}
+.check .a{font-family:Fraunces,Georgia,serif;font-size:1.08rem;line-height:1.25;margin-bottom:.35rem}
+.check .note{font-size:.84rem;color:var(--ash)}
+.edge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem}
+@media(max-width:800px){.edge-grid{grid-template-columns:1fr}}
+.edge-card{background:var(--panel);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(26,22,18,.08);box-shadow:var(--shadow)}
+.edge-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.edge-card .body{padding:1rem 1.05rem 1.15rem}
+.edge-card h3{font-family:Fraunces,Georgia,serif;font-size:1.15rem;margin-bottom:.35rem}
+.edge-card p{font-size:.88rem;color:var(--ash)}
+.ship{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem}
+@media(max-width:860px){.ship{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid rgba(26,22,18,.08);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow)}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem}
+.stat{background:rgba(26,22,18,.035);border-radius:14px;padding:.9rem}
+.stat label{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ash);font-weight:600;margin-bottom:.25rem}
+.stat strong{font-family:Fraunces,Georgia,serif;font-size:1.25rem}
+.moq-box{border:1px dashed rgba(154,91,26,.45);background:rgba(154,91,26,.06);border-radius:14px;padding:1rem;margin-top:1rem}
+.moq-box h4{font-family:Fraunces,Georgia,serif;margin-bottom:.35rem}
+.filters{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1rem}
+.chip{padding:.5rem .85rem;border-radius:999px;background:rgba(26,22,18,.06);font-size:.84rem;font-weight:500}
+.chip.active{background:var(--ink);color:var(--paper)}
+.studio{display:grid;grid-template-columns:300px 1fr;gap:1rem;align-items:start}
+@media(max-width:920px){.studio{grid-template-columns:1fr}}
+.rail{background:var(--panel);border:1px solid rgba(26,22,18,.08);border-radius:var(--radius);padding:.55rem;box-shadow:var(--shadow);position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto}
+@media(max-width:920px){.rail{position:static;display:flex;gap:.4rem;overflow-x:auto;max-height:none}}
+.sup-btn{width:100%;text-align:left;padding:.8rem .85rem;border-radius:14px;display:grid;gap:.12rem}
+@media(max-width:920px){.sup-btn{min-width:170px}}
+.sup-btn:hover{background:rgba(26,22,18,.04)}
+.sup-btn.active{background:var(--ink);color:var(--paper)}
+.sup-btn .name{font-weight:600;font-size:.92rem}
+.sup-btn .loc{font-size:.75rem;opacity:.7}
+.sup-btn .price{font-family:Fraunces,Georgia,serif;font-size:.92rem;color:var(--brass)}
+.sup-btn.active .price{color:var(--brass-hot)}
+.detail{background:var(--panel);border:1px solid rgba(26,22,18,.08);border-radius:22px;padding:clamp(1rem,2.4vw,1.6rem);box-shadow:var(--shadow);min-height:700px}
+.detail-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-bottom:1.1rem;padding-bottom:1rem;border-bottom:1px solid rgba(26,22,18,.08)}
+.detail-head h3{font-family:Fraunces,Georgia,serif;font-size:1.75rem}
+.where{color:var(--ash);margin-top:.2rem;font-size:.9rem}
+.price-block{text-align:right}.price-block .big{font-family:Fraunces,Georgia,serif;font-size:1.7rem;color:var(--brass);line-height:1}
+.price-block .tiny{font-size:.78rem;color:var(--ash);margin-top:.25rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin-bottom:1rem}
+@media(max-width:720px){.grid3{grid-template-columns:1fr}}
+.fact{background:rgba(26,22,18,.035);border-radius:14px;padding:.85rem}
+.fact label{display:block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ash);font-weight:600;margin-bottom:.3rem}
+.fact strong{font-size:.92rem;display:block}
+.badge{display:inline-flex;margin-top:.35rem;font-size:.74rem;font-weight:600;padding:.18rem .5rem;border-radius:999px}
+.badge.yes{background:rgba(47,107,79,.12);color:var(--good)}
+.badge.ask{background:rgba(154,91,26,.12);color:var(--warn)}
+.badge.no{background:rgba(139,58,47,.12);color:var(--bad)}
+.lab{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin-bottom:1.1rem}
+@media(max-width:720px){.lab{grid-template-columns:1fr}}
+.lab-card{border:1px dashed rgba(26,22,18,.18);border-radius:14px;padding:.85rem;text-align:center}
+.lab-card .val{font-family:Fraunces,Georgia,serif;font-size:1.25rem;margin:.2rem 0}
+.lab-card .lbl{font-size:.72rem;color:var(--ash);text-transform:uppercase;letter-spacing:.06em}
+.colors-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ash);font-weight:600;margin:0 0 .65rem}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.7rem}
+.swatch{border-radius:14px;overflow:hidden;border:1px solid rgba(26,22,18,.08);background:#fff}
+.swatch img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.swatch figcaption{padding:.5rem .65rem .65rem;font-size:.8rem;font-weight:500}
+.detail-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.15rem}
+.matrix-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid rgba(26,22,18,.08);background:var(--panel);box-shadow:var(--shadow)}
+table.matrix{width:100%;border-collapse:collapse;min-width:1100px;font-size:.84rem}
+.matrix th,.matrix td{padding:.8rem .85rem;text-align:left;border-bottom:1px solid rgba(26,22,18,.07);vertical-align:top}
+.matrix th{background:#1a1612;color:#f3eee6;font-weight:500}
+.matrix tr:hover td{background:rgba(176,138,74,.06)}
+.footnote{margin-top:1.5rem;padding:1.1rem 1.25rem;border-radius:var(--radius);background:rgba(26,22,18,.04);font-size:.88rem;color:var(--ash)}
+footer{padding:2rem 0 3rem;color:var(--ash);font-size:.84rem;text-align:center}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="meta-chip">For Frank · Edge photos · Shipping · 30 m² check</div>
+  <div class="wrap hero-inner">
+    <div class="brand">THROUGH<span>·</span>20</div>
+    <h1>See the cut edge. Weigh the container. Know if 30 m² is possible.</h1>
+    <p class="lead">China + India + Turkey + Vietnam + Italy/Spain/Poland — same checklist, real colour boards, and honest MOQ answers.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#edges">Vein edge school</a>
+      <a class="btn btn-ghost" href="#studio">Supplier studio</a>
+    </div>
+  </div>
+</header>
+
+<nav class="dock" aria-label="Sections">
+  <div class="wrap dock-inner">
+    <a href="#frank">Checklist</a>
+    <a href="#edges">Edge photos</a>
+    <a href="#ship">Weight & freight</a>
+    <a href="#studio">Suppliers</a>
+    <a href="#matrix">Compare</a>
+    <a href="#ask">RFQ</a>
+  </div>
+</nav>
+
+<section id="frank">
+  <div class="wrap">
+    <div class="kicker">For Frank</div>
+    <h2 class="title">What you asked. Locked.</h2>
+    <div class="specbar">
+      <span class="pill">20mm</span>
+      <span class="pill">Whole body</span>
+      <span class="pill">Vein throughout</span>
+      <span class="pill soft">Ask: pigment in body vs glaze print</span>
+      <span class="pill soft">Ask: mono press vs laminated</span>
+    </div>
+    <div class="checklist">
+      <article class="check"><div class="q">1 · Composition</div><div class="a">Mineral ceramic body</div><p class="note">Feldspar + natural minerals, pressed &amp; fired. Not resin quartz.</p></article>
+      <article class="check"><div class="q">2 · Pigment</div><div class="a">In the raw body</div><p class="note">Reject colour that only lives in a printed glaze layer on the face.</p></article>
+      <article class="check"><div class="q">3 · Veining</div><div class="a">Through the thickness</div><p class="note">Cut edge must show continuous vein — use the photos below as the test.</p></article>
+      <article class="check"><div class="q">4 · Construction</div><div class="a">Single pressed body</div><p class="note">Prefer mono-press. Laminam 20+ adds fiberglass mesh on the back — disclose that.</p></article>
+      <article class="check"><div class="q">5 · Lab reports</div><div class="a">TDS every supplier</div><p class="note">Water absorption · flexural/MOR · Mohs. Europe publishes more; Asia often on request.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="edges">
+  <div class="wrap">
+    <div class="kicker">Vein school</div>
+    <h2 class="title">What the cut edge must look like</h2>
+    <p class="sub">Use these as Frank’s pass/fail. Before deposit, demand the same cut-edge photo of the exact colour + 20mm thickness.</p>
+    <div class="edge-grid">
+      <article class="edge-card">
+        <img src="assets/edge-through-vein.jpg" alt="Through-body vein cut edge" />
+        <div class="body">
+          <span class="pill ok">PASS · Through-vein</span>
+          <h3>Vein runs through 20mm</h3>
+          <p>Pattern continues into the body. Waterfall edges and straight profiles look like stone. This is what Tim asked for.</p>
+        </div>
+      </article>
+      <article class="edge-card">
+        <img src="assets/edge-colour-body.jpg" alt="Colour body matched cut edge" />
+        <div class="body">
+          <span class="pill warn">PARTIAL · Colour body</span>
+          <h3>Body tinted, vein on face</h3>
+          <p>Biscuit colour matches background, but veins stop at the surface. Often sold as “full body” — not true through-vein.</p>
+        </div>
+      </article>
+      <article class="edge-card">
+        <img src="assets/edge-surface-print.jpg" alt="Surface print only cut edge" />
+        <div class="body">
+          <span class="pill no">FAIL · Surface print</span>
+          <h3>White/plain core</h3>
+          <p>Inkjet/glaze on top only. Cut edge shows blank ceramic. Reject for exposed edges unless you miter-wrap.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="ship">
+  <div class="wrap">
+    <div class="kicker">Logistics</div>
+    <h2 class="title">Shipping weight, freight, and the 30 m² question</h2>
+    <div class="ship">
+      <div class="panel">
+        <div class="stat-grid">
+          <div class="stat"><label>One slab 1600×3200×20</label><strong>~5.12 m² · 240–255 kg</strong></div>
+          <div class="stat"><label>30 m² order</label><strong>~6 slabs · ~1.5 tonnes</strong></div>
+          <div class="stat"><label>Full 40ft load</label><strong>~100–110 slabs · ~540–560 m² · ~27 t</strong></div>
+          <div class="stat"><label>Ocean freight 40ft (guide)</label><strong>$2,300–$5,200</strong></div>
+        </div>
+        <div class="moq-box">
+          <h4>Can we order only 30 m² instead of 50?</h4>
+          <p style="color:var(--ash);font-size:.92rem;margin-bottom:.7rem">Usually <strong>not from factory production</strong>. Most export MOQs are 100 m²+, 400 m², or 1 container. <strong>30 m² ≈ 6 slabs</strong> is a sample / stock / trader move.</p>
+          <div class="specbar" style="margin:0">
+            <span class="pill ok">Possible: stock traders, Jinovation retail claim 8 m², distributor remnants</span>
+            <span class="pill no">Unlikely: LingBiao / Lumina / Anatolia / Laminam production runs</span>
+            <span class="pill warn">Freight warning: LCL on 1.5 t costs far more per m² than a full container</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="font-family:Fraunces,Georgia,serif;margin-bottom:.7rem">Freight per m² (rough)</h3>
+        <p style="font-size:.9rem;color:var(--ash);margin-bottom:.8rem">Ocean only, excludes duty, inland, insurance, destination fees. Rates move weekly.</p>
+        <div class="stat" style="margin-bottom:.55rem"><label>China → Europe 40ft full</label><strong>~$4–10 / m²</strong></div>
+        <div class="stat" style="margin-bottom:.55rem"><label>China → Africa 40ft full</label><strong>~$5–12 / m²</strong></div>
+        <div class="stat" style="margin-bottom:.55rem"><label>India → Gulf / EU 40ft</label><strong>~$4–11 / m²</strong></div>
+        <div class="stat" style="margin-bottom:.55rem"><label>30 m² LCL / air</label><strong>Often $25–80+ / m²</strong></div>
+        <p style="font-size:.82rem;color:var(--ash);margin-top:.8rem">Example: Foshan→UK 40GP quotes recently clustered ~$4,200–$5,300 all-in origin charges. South Africa 40ft often ~$3,800–$5,200.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="studio">
+  <div class="wrap">
+    <div class="kicker">Supplier studio</div>
+    <h2 class="title">Click a supplier. Same detail everywhere.</h2>
+    <p class="sub">Filter by country. Each card answers pigment, vein, construction, TDS, colours, MOQ, 30 m², weight, and freight.</p>
+    <div class="filters" id="filters"></div>
+    <div class="studio">
+      <aside class="rail" id="rail"></aside>
+      <div class="detail" id="detail" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="matrix">
+  <div class="wrap">
+    <div class="kicker">Side-by-side</div>
+    <h2 class="title">One matrix</h2>
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th>Supplier</th><th>Country</th><th>Vein</th><th>30 m²?</th><th>MOQ</th><th>FOB guide</th><th>Slab wt</th><th>40ft freight guide</th><th>Water / MOR / Mohs</th>
+          </tr>
+        </thead>
+        <tbody id="matrix-body"></tbody>
+      </table>
+    </div>
+    <div class="footnote">Colour boards are indicative studio visuals for Frank’s briefing. Always request the supplier’s real slab + cut-edge photos of the locked colour before paying a deposit. FOB and freight are public-band estimates, not binding quotes.</div>
+  </div>
+</section>
+
+<section id="ask">
+  <div class="wrap">
+    <div class="kicker">RFQ</div>
+    <h2 class="title">Copy this to every supplier</h2>
+    <div class="panel">
+      <p id="rfq-text" style="white-space:pre-wrap;font-size:.98rem;line-height:1.55">Need 1600×3200×20mm sintered stone — whole body with vein throughout thickness (through-body vein / 对位通体).
+
+Please confirm:
+1) Is pigment mixed into the raw material body, or only a printed/glazed surface layer?
+2) Do veins continue through the full 20mm? Send cut-edge / cross-section photos of this exact colour (like a workshop edge photo).
+3) Single pressed mono body, or laminated / mesh-backed / layered?
+4) TDS: water absorption (ISO 10545-3), flexural strength / MOR (ISO 10545-4), Mohs hardness.
+5) Can you supply ~30 m² (about 6 slabs) from stock, or is MOQ higher?
+6) FOB price, packing, slab weight, container loading qty, and estimated ocean freight to our port.
+
+Do not quote surface-only inkjet or coloured body without vein-through.</p>
+      <div class="detail-actions">
+        <button class="btn btn-dark" id="copy-rfq" type="button">Copy RFQ</button>
+        <a class="btn btn-line" href="#studio">Back to suppliers</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>THROUGH·20 · Brief for Frank · Share the whole Frank-ThroughBody-20mm folder</footer>
+
+<script>
+const IMG = {
+  through: "assets/edge-through-vein.jpg",
+  colour: "assets/edge-colour-body.jpg",
+  surface: "assets/edge-surface-print.jpg",
+  cal: "assets/slab-calacatta-gold.jpg",
+  taj: "assets/slab-taj-mahal.jpg",
+  nero: "assets/slab-nero.jpg",
+  viola: "assets/slab-viola.jpg",
+  carrara: "assets/slab-carrara.jpg",
+  lime: "assets/slab-limestone.jpg",
+};
+
+const suppliers = [
+  // —— CHINA ——
+  {
+    id:"eastphenix", country:"China", name:"East Phenix",
+    loc:"Xiamen, Fujian",
+    price:"$40–90 / m²", priceNote:"Through-vein mid/premium guide",
+    moq:"~10 slabs (~51 m²)", moq30:"Maybe — 10-slab MOQ is ~51 m²; ask stock for 6 slabs", moq30Badge:"ask",
+    lead:"7–15 days", size:"1600×3200×20mm",
+    slabWt:"~245–255 kg", load40:"~110 slabs / ~563 m² / ~27 t",
+    freight:"Xiamen 40ft ocean often ~$2.5k–$5k depending on destination",
+    pigment:"Claimed through-vein sintering — pigment/vein in body", pigmentBadge:"ask", pigmentBadgeText:"Confirm + edge photo",
+    vein:"Marketed through-vein (Golden Iris, Fracture White…)", veinBadge:"yes", veinBadgeText:"Through-vein claimed",
+    construction:"Single pressed sintered slab", constructionBadge:"yes", constructionBadgeText:"Mono body",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"through",
+    colours:[{name:"Golden Iris",img:IMG.cal},{name:"Fracture White",img:IMG.carrara},{name:"Ariston Archia",img:IMG.lime}],
+    link:"https://www.sinteredstonechina.com/sintered-stone-for-full-body/20mm-coloured-body/golden-iris-through-vein-sintered-stone-slab.html",
+    contact:"info@eastphenix.com · +86 138 5999 3895",
+  },
+  {
+    id:"lingbiao", country:"China", name:"LingBiao",
+    loc:"Qinhuangdao, Hebei",
+    price:"$35–80 / m²", priceNote:"Factory-direct guide",
+    moq:"From 1 container (mix OK)", moq30:"No for production — ask stock remnant", moq30Badge:"no",
+    lead:"Stock vs production", size:"3200×1600×20mm",
+    slabWt:"~248 kg (typical 20mm jumbo)", load40:"~100–110 slabs / ~27 t",
+    freight:"North China ports; 40ft ocean ~$2.5k–$5.2k band",
+    pigment:"Full-body programme — colour through core", pigmentBadge:"ask", pigmentBadgeText:"Confirm pigment vs print",
+    vein:"20mm full-body countertop collection", veinBadge:"yes", veinBadgeText:"Full-body line",
+    construction:"SACMI pressed mono slab", constructionBadge:"yes", constructionBadgeText:"Mono press",
+    water:"Certs on request", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"through",
+    colours:[{name:"Taj Mahal",img:IMG.taj},{name:"Calacatta Viola",img:IMG.viola},{name:"Carrara",img:IMG.carrara},{name:"Bianco Rumeno",img:IMG.lime}],
+    link:"https://lbsinteredstone.com/",
+    contact:"info@lbsinteredstone.com · WhatsApp +86 133 0335 8455",
+  },
+  {
+    id:"boss", country:"China", name:"BOSS Ceramics",
+    loc:"Foshan Nanzhuang, Guangdong",
+    price:"$25–60 / m²", priceNote:"Foshan mid-band",
+    moq:"Ask (slab + furniture stock)", moq30:"Possible if stock — ask", moq30Badge:"ask",
+    lead:"Ask", size:"Large format · 20mm 2CM FULL BODY",
+    slabWt:"~240–255 kg", load40:"~100+ slabs / ~27 t",
+    freight:"Foshan/Huangpu → EU/Africa often ~$2.4k–$5.3k / 40ft",
+    pigment:"Body hue matched to face (verify vein)", pigmentBadge:"ask", pigmentBadgeText:"Verify through-vein",
+    vein:"2CM full body — confirm vein continuity", veinBadge:"ask", veinBadgeText:"Ask cut edge",
+    construction:"Pressed sintered slab", constructionBadge:"yes", constructionBadgeText:"Pressed body",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"colour",
+    colours:[{name:"2CM Warm",img:IMG.taj},{name:"2CM Grey",img:IMG.lime},{name:"Dark Body",img:IMG.nero}],
+    link:"https://www.boss-sinteredstone.com/list_26/",
+    contact:"sales@bossceramics.com",
+  },
+  {
+    id:"dektop", country:"China", name:"DEKTOP / Yiying",
+    loc:"Foshan Nanhai, Guangdong",
+    price:"$16–26 / m²", priceNote:"Published product pages FOB Foshan",
+    moq:"~113 m²", moq30:"No on listed MOQ — negotiate stock", moq30Badge:"no",
+    lead:"~7 days custom claim", size:"1600×3200×20mm",
+    slabWt:"~245–255 kg", load40:"~100–110 slabs / ~27 t",
+    freight:"Foshan 40GP → UK quotes recently ~$4.2k–$5.3k all-in origin",
+    pigment:"Full-body series — vein claimed inside when cut", pigmentBadge:"ask", pigmentBadgeText:"Confirm body pigment",
+    vein:"Vein-in-body claimed (Sacmi)", veinBadge:"yes", veinBadgeText:"Claimed through body",
+    construction:"Single Sacmi-pressed slab", constructionBadge:"yes", constructionBadgeText:"Mono press",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"through",
+    colours:[{name:"Statuario FB",img:IMG.carrara},{name:"Arabescato Viola",img:IMG.viola},{name:"Verde / gold move",img:IMG.cal},{name:"Platinum",img:IMG.lime}],
+    link:"https://www.dektopsurface.com/full-body-sintered-stone/",
+    contact:"jackywan@dektop.cn · WhatsApp +86 131 6896 3213",
+  },
+  {
+    id:"enming", country:"China", name:"Enming Stone",
+    loc:"Xiamen Siming, Fujian",
+    price:"$30–70 / m²", priceNote:"Trader estimate",
+    moq:"Ask · ~104 pcs / 40GP", moq30:"Maybe from stock — ask", moq30Badge:"ask",
+    lead:"Ask", size:"1600×3200×20mm",
+    slabWt:"~250 kg", load40:"104 pcs / 40GP ≈ 27 t",
+    freight:"Xiamen ocean 40ft band ~$2.5k–$5k",
+    pigment:"Listed full body through veins", pigmentBadge:"ask", pigmentBadgeText:"Confirm",
+    vein:"Through veins marketing", veinBadge:"yes", veinBadgeText:"Through veins claimed",
+    construction:"Sintered slab via exporter", constructionBadge:"ask", constructionBadgeText:"Confirm factory",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"through",
+    colours:[{name:"Nero Marquina",img:IMG.nero},{name:"Sahara Noir",img:IMG.nero},{name:"Calacatta Extreme",img:IMG.cal}],
+    link:"https://www.chinaartificialstone.com/20mm-sintered-stone-marble-slabs-1600x3200mm_p482.html",
+    contact:"info@chinaartificialstone.com · +86 180 4623 9265",
+  },
+  {
+    id:"jinovation", country:"China", name:"Jinovation Stone",
+    loc:"Xiamen, Fujian",
+    price:"$40–85 / m²", priceNote:"Project/wholesale estimate",
+    moq:"Retail 8 m² · Wholesale 400 · Project 600", moq30:"Yes possible on retail claim (8 m²) — confirm export packing", moq30Badge:"yes",
+    lead:"Ask", size:"1600×3200 / larger · 20mm",
+    slabWt:"240–255 kg listed", load40:"~27 t typical",
+    freight:"Xiamen 40ft ~$2.5k–$5k guide",
+    pigment:"Homogeneous surface-to-core claimed", pigmentBadge:"yes", pigmentBadgeText:"Body homogeneity claimed",
+    vein:"Full-body consistency for edges", veinBadge:"ask", veinBadgeText:"Confirm vein grade",
+    construction:"High-pressure sintered mono · resin-free", constructionBadge:"yes", constructionBadgeText:"Mono sintered",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Density ~2.8 · request Mohs",
+    edgeRef:"colour",
+    colours:[{name:"White Full Body",img:IMG.carrara},{name:"Warm Veined",img:IMG.taj},{name:"Grey Body",img:IMG.lime}],
+    link:"https://www.sinteredstone-factory.com/full-body-sintered-stone/full-body-sintered-stone-slab/20mm-full-body-sintered-stone-slab.html",
+    contact:"Info@xiamensrs.com · +86 138 6019 1965",
+  },
+  {
+    id:"jinqiang", country:"China", name:"Jinqiang",
+    loc:"Foshan Nanzhuang, Guangdong",
+    price:"Ask (RMB / export FOB)", priceNote:"对位通体 aligned through-body",
+    moq:"Ask agent", moq30:"Unlikely production — ask showroom stock", moq30Badge:"ask",
+    lead:"Ask", size:"1600×3200×20mm",
+    slabWt:"~245–255 kg", load40:"~27 t / 40ft",
+    freight:"Foshan export corridor",
+    pigment:"对位通体 — body aligned with surface", pigmentBadge:"yes", pigmentBadgeText:"Aligned through-body",
+    vein:"Aligned through-body process", veinBadge:"yes", veinBadgeText:"对位通体",
+    construction:"Pressed sintered body", constructionBadge:"yes", constructionBadgeText:"Mono body",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"through",
+    colours:[{name:"Dangui 20mm",img:IMG.taj},{name:"Neutral Through",img:IMG.lime}],
+    link:"https://www.gdjinqiang.com/product2-114-379-1218-2.html",
+    contact:"400-020-8878",
+  },
+  {
+    id:"nabel", country:"China", name:"NABEL",
+    loc:"Zhejiang / East China",
+    price:"$50–120 / m²", priceNote:"Premium veins-alignment",
+    moq:"Ask export desk", moq30:"No typical brand MOQ — distributor may have stock", moq30Badge:"no",
+    lead:"Ask", size:"Large format · 20mm programme",
+    slabWt:"~248 kg class", load40:"Container programme",
+    freight:"East China ports",
+    pigment:"Veins-alignment full-body tech", pigmentBadge:"yes", pigmentBadgeText:"Full-body tech",
+    vein:"Aligned veins claimed", veinBadge:"yes", veinBadgeText:"Veins-alignment",
+    construction:"Sintered mono brand process", constructionBadge:"yes", constructionBadgeText:"Brand mono",
+    water:"Request official TDS", flexural:"Request official TDS", mohs:"Request official TDS",
+    edgeRef:"through",
+    colours:[{name:"Aligned White",img:IMG.carrara},{name:"Soft Grey Vein",img:IMG.lime}],
+    link:"https://en.nabel.cc/",
+    contact:"Via NABEL export / agent",
+  },
+  {
+    id:"xiyou", country:"China", name:"XiYou (Alibaba)",
+    loc:"Guangdong / Foshan",
+    price:"$9.90–15.90 / m²", priceNote:"Listed tiers — verify quality hard",
+    moq:"100–500+ m²", moq30:"No on listed breaks", moq30Badge:"no",
+    lead:"7–20 days", size:"1600×3200×20mm",
+    slabWt:"Assume ~250 kg — confirm", load40:"Ask loading plan",
+    freight:"Foshan ocean band",
+    pigment:"Listed full body — unverified", pigmentBadge:"ask", pigmentBadgeText:"High risk",
+    vein:"Unverified at this price", veinBadge:"no", veinBadgeText:"Suspect surface / colour body",
+    construction:"Claimed sintered", constructionBadge:"ask", constructionBadgeText:"Verify",
+    water:"≤0.5% claimed", flexural:"Not published", mohs:"Not published",
+    edgeRef:"surface",
+    colours:[{name:"Listing matte",img:IMG.lime}],
+    link:"https://www.alibaba.com/product-detail/Wholesale-Full-Body-Sintered-Stone-Slab_1601717859540.html",
+    contact:"Via Alibaba · XiYou",
+  },
+
+  // —— INDIA ——
+  {
+    id:"lumina", country:"India", name:"Lumina Tile",
+    loc:"Rajkot / Morbi ecosystem, Gujarat",
+    price:"$25–45 / m²", priceNote:"India sintered/large slab export band",
+    moq:"Usually 1 container; export desk quotes fast", moq30:"No typical — ask graded stock", moq30Badge:"no",
+    lead:"~20–45 days production", size:"Large slabs incl. 1600×3200 · 6–20mm",
+    slabWt:"~240–255 kg @20mm jumbo", load40:"~400–800 m² class depending size mix",
+    freight:"Mundra/Kandla 40ft often competitive vs China on some lanes",
+    pigment:"Curates Morbi full-body / large slabs — confirm exact SKU", pigmentBadge:"ask", pigmentBadgeText:"Confirm factory SKU",
+    vein:"Must lock through-vein SKU — India quality swing wider", veinBadge:"ask", veinBadgeText:"Edge photo mandatory",
+    construction:"Pressed porcelain / sintered from partner plants", constructionBadge:"ask", constructionBadgeText:"Confirm process",
+    water:"Target ≤0.5% / often <0.1% on premium", flexural:"Request TDS", mohs:"Often Mohs 6–7 claimed on slabs",
+    edgeRef:"colour",
+    colours:[{name:"Marble look 160×320",img:IMG.cal},{name:"Warm quartzite",img:IMG.taj},{name:"Carrara",img:IMG.carrara}],
+    link:"https://luminatile.com/",
+    contact:"export@luminatile.com · +91 98984 27293",
+  },
+  {
+    id:"simpolo", country:"India", name:"Simpolo Ceramics",
+    loc:"Morbi, Gujarat",
+    price:"$20–40 / m²", priceNote:"Brand factory; confirm 20mm slab line",
+    moq:"Factory / dealer programmes — usually container", moq30:"No production — dealer stock maybe", moq30Badge:"no",
+    lead:"Ask export", size:"Large formats + outdoor 20mm lines (verify jumbo 20mm)",
+    slabWt:"Confirm per SKU", load40:"Container",
+    freight:"Mundra export",
+    pigment:"Strong on technical / full-body categories", pigmentBadge:"ask", pigmentBadgeText:"Lock full-body SKU",
+    vein:"Not all lines are through-vein — ask", veinBadge:"ask", veinBadgeText:"Ask cut edge",
+    construction:"In-house ceramic production (not outsourced claims)", constructionBadge:"yes", constructionBadgeText:"Own plant",
+    water:"Request TDS", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"colour",
+    colours:[{name:"Marble / GVT looks",img:IMG.carrara},{name:"Warm stone",img:IMG.lime}],
+    link:"https://tiles.simpolo.net/",
+    contact:"customercare@simpolo.net · hemil.shihora@simpolo.net · +91 72289 22222",
+  },
+  {
+    id:"lgroup", country:"India", name:"L-Group International",
+    loc:"Morbi, Gujarat",
+    price:"$18–35 / m²", priceNote:"Published slab export; thickness often 9/15mm — ask 20mm",
+    moq:"1 container (mix sizes OK)", moq30:"No", moq30Badge:"no",
+    lead:"Ask", size:"Up to 1600×3200 · Colour body & Full body",
+    slabWt:"Depends thickness — 20mm must be confirmed", load40:"1×20ft or 40ft",
+    freight:"India FCL",
+    pigment:"Colour body & full body variants listed", pigmentBadge:"ask", pigmentBadgeText:"Confirm 20mm availability",
+    vein:"Full body ≠ always through-vein", veinBadge:"ask", veinBadgeText:"Edge photo",
+    construction:"Pressed porcelain slabs", constructionBadge:"yes", constructionBadgeText:"Pressed porcelain",
+    water:"≤0.05% listed", flexural:"Breaking ≥2000N listed", mohs:"Mohs 6–7 listed",
+    edgeRef:"colour",
+    colours:[{name:"Full body light",img:IMG.carrara},{name:"Stone look",img:IMG.lime}],
+    link:"https://lgroup.in/collection/slab-tiles.html",
+    contact:"Via L-Group export form on site",
+  },
+
+  // —— TURKEY ——
+  {
+    id:"anatolia", country:"Turkey", name:"Anatolia · Aeterna",
+    loc:"Aliağa, İzmir (plant) · HQ Vaughan, Canada",
+    price:"$45–95 / m²", priceNote:"Above China, below Italy brand retail",
+    moq:"Distributor / project — usually not 30 m² factory", moq30:"Via distributor stock possible", moq30Badge:"ask",
+    lead:"Stock programmes strong in NA/EU", size:"160/162×320/322 cm · 6 / 12 / 20mm",
+    slabWt:"~248 kg class @20mm", load40:"Project logistics via Anatolia network",
+    freight:"Turkey→EU short sea often cheaper than China",
+    pigment:"Digital print + sintered body — ask Colorsync / through options per colour", pigmentBadge:"ask", pigmentBadgeText:"Confirm per colour",
+    vein:"Some colours replicate veins; not automatically through-body", veinBadge:"ask", veinBadgeText:"Ask IN-SIDE / edge sample",
+    construction:"Sintered slab from İzmir plant", constructionBadge:"yes", constructionBadgeText:"Mono sintered plant",
+    water:"<0.08% (published 6/12mm TDS)", flexural:"MOR ~50 N/mm² (12mm TDS)", mohs:"Request 20mm TDS",
+    edgeRef:"colour",
+    colours:[{name:"Marble collection",img:IMG.cal},{name:"Soft white",img:IMG.carrara},{name:"Warm stone",img:IMG.taj}],
+    link:"https://aeternasurfaces.com/en/contact-us",
+    contact:"info@aeternasurfaces.com · İzmir +90 232 520 7300 · +1 905 771 3800",
+  },
+
+  // —— VIETNAM ——
+  {
+    id:"slabstone", country:"Vietnam", name:"Slabstone Trungdo",
+    loc:"Nghi Văn, Nghi Lộc, Nghệ An",
+    price:"$28–55 / m²", priceNote:"Estimate — quote required",
+    moq:"Project / distributor — ask; EU custom orders exist", moq30:"Unlikely production — ask stock", moq30Badge:"no",
+    lead:"Ask (EU custom order precedent)", size:"Up to 1600×2400 · 20mm (Veintech 1200×2400×20)",
+    slabWt:"Catalogue cites ~140 kg for some 1200×2400×20", load40:"Ask packing plan",
+    freight:"Vietnam→EU competitive on some lanes vs South China",
+    pigment:"Sacmi Continua+ · mineral body", pigmentBadge:"ask", pigmentBadgeText:"Confirm Veintech body",
+    vein:"Veintech collection — verify cross-section", veinBadge:"ask", veinBadgeText:"Ask edge photo",
+    construction:"Sintered Continua+ mono body", constructionBadge:"yes", constructionBadgeText:"Continua+ mono",
+    water:"0.04% listed", flexural:"MOR 45 MPa listed", mohs:"Request",
+    edgeRef:"through",
+    colours:[{name:"Veintech Stream",img:IMG.lime},{name:"Marble looks",img:IMG.carrara},{name:"Warm",img:IMG.taj}],
+    link:"https://slabstone.vn/",
+    contact:"slabstone@trungdo.vn · info@trungdo.vn · +84 964 726 568",
+  },
+
+  // —— EUROPE ——
+  {
+    id:"laminam", country:"Italy", name:"Laminam 20+",
+    loc:"Italy (global distribution)",
+    price:"$90–180+ / m²", priceNote:"Premium published brand",
+    moq:"Distributor / fabricator — slabs from stock networks", moq30:"Yes via distributor stock (pay premium)", moq30Badge:"yes",
+    lead:"Stock dependent", size:"1620×3240 · 20.5mm (20+)",
+    slabWt:"~50.4 kg/m² → ~265 kg / full size", load40:"Distributor logistics",
+    freight:"EU inland cheap if buying inside Europe; import from IT if outside",
+    pigment:"Full-body porcelain stoneware", pigmentBadge:"yes", pigmentBadgeText:"Full-body porcelain",
+    vein:"Collection-dependent; IN-SIDE continuity on named lines", veinBadge:"ask", veinBadgeText:"Check collection",
+    construction:"Ceramic body + fiberglass mesh on back (20+)", constructionBadge:"ask", constructionBadgeText:"Mesh-backed 20+",
+    water:"≤0.1%", flexural:"~50 MPa MOR", mohs:"Request / deep abrasion listed",
+    edgeRef:"through",
+    colours:[{name:"Calacatta class",img:IMG.cal},{name:"Soft white",img:IMG.carrara},{name:"Dark",img:IMG.nero}],
+    link:"https://www.laminam.com/",
+    contact:"Via Laminam distributor in your market",
+  },
+  {
+    id:"neolith", country:"Spain", name:"Neolith",
+    loc:"Spain (TheSize) · global",
+    price:"$100–200+ / m²", priceNote:"Ultra-premium sintered",
+    moq:"Distributor slab sales — 30 m² often feasible from stock", moq30:"Yes via stockists", moq30Badge:"yes",
+    lead:"Stock", size:"3200×1600 class · 6/12/20mm",
+    slabWt:"~20mm ≈ 50 kg/m² class", load40:"Distributor",
+    freight:"EU distribution; overseas expensive vs Asia FOB",
+    pigment:"Sintered mineral body · design-dependent", pigmentBadge:"ask", pigmentBadgeText:"Per colour method",
+    vein:"Named collections vary — some through, many face+", veinBadge:"ask", veinBadgeText:"Approve cut sample",
+    construction:"Sintered slab (brand process)", constructionBadge:"yes", constructionBadgeText:"Sintered mono brand",
+    water:"~0.01–0.1% band (TDS)", flexural:"MOR often >45 N/mm²", mohs:"Request TDS",
+    edgeRef:"colour",
+    colours:[{name:"Calacatta",img:IMG.cal},{name:"Nero",img:IMG.nero},{name:"Warm",img:IMG.taj}],
+    link:"https://www.neolith.com/",
+    contact:"Via Neolith national distributor",
+  },
+  {
+    id:"paradyz", country:"Poland", name:"Paradyż TRI-D",
+    loc:"Poland (Ceramika Paradyż)",
+    price:"$55–110 / m²", priceNote:"EU full-body TRI-D 20mm",
+    moq:"Distributor — small lots more realistic than Asia factories", moq30:"Likely via EU stock/distributor", moq30Badge:"yes",
+    lead:"EU stock", size:"1600×3200 & 1230×3200 · 12 & 20mm",
+    slabWt:"~20mm jumbo class ~240–260 kg", load40:"EU truck / distributor",
+    freight:"Europe road freight beats ocean for small lots",
+    pigment:"Full-body colouring — colour in cross-section", pigmentBadge:"yes", pigmentBadgeText:"Full-body colouring",
+    vein:"Selected TRI-D 20mm have mineral veins visible in cross-section", veinBadge:"yes", veinBadgeText:"Cross-section veins (selected)",
+    construction:"Sintered TRI-D body", constructionBadge:"yes", constructionBadgeText:"Full-body sintered",
+    water:"Request TDS (BIa class)", flexural:"Request TDS", mohs:"Request TDS",
+    edgeRef:"through",
+    colours:[{name:"TRI-D light",img:IMG.carrara},{name:"TRI-D warm",img:IMG.taj},{name:"TRI-D grey",img:IMG.lime}],
+    link:"https://www.paradyz.com/",
+    contact:"Via Paradyż export / local EU distributor",
+  },
+];
+
+let filter = "All";
+const badge = (b) => (b === "yes" ? "yes" : b === "no" ? "no" : "ask");
+
+function countries() {
+  return ["All", ...[...new Set(suppliers.map(s => s.country))]];
+}
+
+function filtered() {
+  return filter === "All" ? suppliers : suppliers.filter(s => s.country === filter);
+}
+
+function renderFilters() {
+  document.getElementById("filters").innerHTML = countries().map(c =>
+    `<button class="chip ${c===filter?"active":""}" data-c="${c}" type="button">${c}</button>`
+  ).join("");
+  document.querySelectorAll("#filters .chip").forEach(btn => {
+    btn.onclick = () => { filter = btn.dataset.c; const list = filtered(); select(list[0]?.id || suppliers[0].id); };
+  });
+}
+
+function renderRail(activeId) {
+  const rail = document.getElementById("rail");
+  rail.innerHTML = filtered().map(s => `
+    <button class="sup-btn ${s.id===activeId?"active":""}" data-id="${s.id}" type="button">
+      <span class="name">${s.name}</span>
+      <span class="loc">${s.country} · ${s.loc}</span>
+      <span class="price">${s.price}</span>
+    </button>`).join("");
+  rail.querySelectorAll(".sup-btn").forEach(b => b.onclick = () => select(b.dataset.id));
+}
+
+function renderDetail(s) {
+  const edgeSrc = IMG[s.edgeRef] || IMG.through;
+  document.getElementById("detail").innerHTML = `
+    <div class="detail-head">
+      <div>
+        <div class="specbar" style="margin-bottom:.45rem"><span class="pill soft">${s.country}</span></div>
+        <h3>${s.name}</h3>
+        <div class="where">${s.loc}</div>
+        <div class="where">${s.contact}</div>
+      </div>
+      <div class="price-block">
+        <div class="big">${s.price}</div>
+        <div class="tiny">${s.priceNote}</div>
+      </div>
+    </div>
+
+    <div class="grid3">
+      <div class="fact"><label>Pigment</label><strong>${s.pigment}</strong><span class="badge ${badge(s.pigmentBadge)}">${s.pigmentBadgeText}</span></div>
+      <div class="fact"><label>Vein through</label><strong>${s.vein}</strong><span class="badge ${badge(s.veinBadge)}">${s.veinBadgeText}</span></div>
+      <div class="fact"><label>Construction</label><strong>${s.construction}</strong><span class="badge ${badge(s.constructionBadge)}">${s.constructionBadgeText}</span></div>
+    </div>
+
+    <div class="lab">
+      <div class="lab-card"><div class="lbl">Water absorption</div><div class="val">${s.water}</div></div>
+      <div class="lab-card"><div class="lbl">Flexural / MOR</div><div class="val">${s.flexural}</div></div>
+      <div class="lab-card"><div class="lbl">Mohs</div><div class="val">${s.mohs}</div></div>
+    </div>
+
+    <div class="grid3">
+      <div class="fact"><label>Size</label><strong>${s.size}</strong></div>
+      <div class="fact"><label>MOQ</label><strong>${s.moq}</strong></div>
+      <div class="fact"><label>Lead</label><strong>${s.lead}</strong></div>
+      <div class="fact"><label>30 m² order?</label><strong>${s.moq30}</strong><span class="badge ${badge(s.moq30Badge)}">${s.moq30Badge==="yes"?"Possible":s.moq30Badge==="no"?"Not typical":"Ask"}</span></div>
+      <div class="fact"><label>Slab weight</label><strong>${s.slabWt}</strong></div>
+      <div class="fact"><label>40ft load</label><strong>${s.load40}</strong></div>
+    </div>
+
+    <div class="fact" style="margin-bottom:1rem"><label>Freight guide</label><strong>${s.freight}</strong></div>
+
+    <div class="colors-label">Edge reference for this supplier (what to demand)</div>
+    <div class="swatches" style="margin-bottom:1rem">
+      <figure class="swatch"><img src="${edgeSrc}" alt="Edge reference" /><figcaption>Cut-edge standard to match</figcaption></figure>
+    </div>
+
+    <div class="colors-label">Colour boards (indicative — request real photos)</div>
+    <div class="swatches">
+      ${s.colours.map(c => `<figure class="swatch"><img src="${c.img}" alt="${c.name}" /><figcaption>${c.name}</figcaption></figure>`).join("")}
+    </div>
+
+    <div class="detail-actions">
+      <a class="btn btn-dark" href="${s.link}" target="_blank" rel="noopener">Open supplier</a>
+      <button class="btn btn-line" type="button" id="copy-one">Copy contact + ask</button>
+    </div>`;
+
+  document.getElementById("copy-one").onclick = () => {
+    const t = `${s.name} (${s.country} · ${s.loc})\n${s.contact}\n${s.link}\n\n20mm whole-body vein-through. Confirm body pigment vs surface print, mono press vs laminated, TDS, cut-edge photos, whether 30 m² is possible, slab weight, and freight to our port.`;
+    navigator.clipboard.writeText(t);
+    const b = document.getElementById("copy-one"); b.textContent = "Copied"; setTimeout(() => b.textContent = "Copy contact + ask", 1100);
+  };
+}
+
+function select(id) {
+  renderFilters();
+  const list = filtered();
+  const s = list.find(x => x.id === id) || list[0] || suppliers[0];
+  renderRail(s.id);
+  renderDetail(s);
+}
+
+function renderMatrix() {
+  document.getElementById("matrix-body").innerHTML = suppliers.map(s => `
+    <tr>
+      <td><strong>${s.name}</strong></td>
+      <td>${s.country}</td>
+      <td>${s.veinBadgeText}</td>
+      <td>${s.moq30Badge==="yes"?"Possible":s.moq30Badge==="no"?"No":"Ask"}</td>
+      <td>${s.moq}</td>
+      <td>${s.price}</td>
+      <td>${s.slabWt}</td>
+      <td>${s.freight}</td>
+      <td>${s.water} · ${s.flexural} · ${s.mohs}</td>
+    </tr>`).join("");
+}
+
+document.getElementById("copy-rfq").onclick = () => {
+  navigator.clipboard.writeText(document.getElementById("rfq-text").textContent);
+  const b = document.getElementById("copy-rfq"); b.textContent = "Copied"; setTimeout(() => b.textContent = "Copy RFQ", 1100);
+};
+
+const links = [...document.querySelectorAll(".dock a")];
+const sections = links.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    links.forEach(l => l.classList.toggle("active", l.getAttribute("href") === `#${e.target.id}`));
+  });
+}, { rootMargin: "-40% 0px -50% 0px" });
+sections.forEach(s => io.observe(s));
+
+select(suppliers[0].id);
+renderMatrix();
+</script>
+</body>
+</html>

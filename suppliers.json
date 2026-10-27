@@ -1,0 +1,809 @@
+[
+  {
+    "id": "eastphenix",
+    "country": "China",
+    "name": "East Phenix",
+    "loc": "Xiamen, Fujian",
+    "price": "$40–90 / m²",
+    "priceNote": "Through-vein mid/premium guide",
+    "moq": "~10 slabs (~51 m²)",
+    "moq30": "Maybe — 10-slab MOQ ~51 m²; ask stock for 6 slabs",
+    "moq30Badge": "ask",
+    "lead": "7–15 days",
+    "size": "1600×3200×20mm",
+    "slabWt": "~245–255 kg",
+    "load40": "~110 slabs / ~563 m² / ~27 t",
+    "freight": "Xiamen 40ft ocean often ~$2.5k–$5k",
+    "pigment": "Claimed through-vein sintering — pigment/vein in body",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm + edge photo",
+    "vein": "Marketed through-vein",
+    "veinBadge": "yes",
+    "veinBadgeText": "Through-vein claimed",
+    "construction": "Single pressed sintered slab",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Mono body",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "eastphenix product 1",
+        "img": "assets/suppliers/eastphenix-1.jpg"
+      },
+      {
+        "name": "eastphenix product 2",
+        "img": "assets/suppliers/eastphenix-2.jpg"
+      },
+      {
+        "name": "eastphenix product 3",
+        "img": "assets/suppliers/eastphenix-3.jpg"
+      }
+    ],
+    "link": "https://www.sinteredstonechina.com/sintered-stone-for-full-body/20mm-coloured-body/golden-iris-through-vein-sintered-stone-slab.html",
+    "contact": "info@eastphenix.com · +86 138 5999 3895",
+    "photoNote": "Photos from East Phenix product pages"
+  },
+  {
+    "id": "lingbiao",
+    "country": "China",
+    "name": "LingBiao",
+    "loc": "Qinhuangdao, Hebei",
+    "price": "$35–80 / m²",
+    "priceNote": "Factory-direct guide",
+    "moq": "From 1 container (mix OK)",
+    "moq30": "No for production — ask stock remnant",
+    "moq30Badge": "no",
+    "lead": "Stock vs production",
+    "size": "3200×1600×20mm",
+    "slabWt": "~248 kg",
+    "load40": "~100–110 slabs / ~27 t",
+    "freight": "North China ports; 40ft ~$2.5k–$5.2k",
+    "pigment": "Full-body programme",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm pigment vs print",
+    "vein": "20mm full-body countertop collection",
+    "veinBadge": "yes",
+    "veinBadgeText": "Full-body line",
+    "construction": "SACMI pressed mono slab",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Mono press",
+    "water": "Certs on request",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "lingbiao product 1",
+        "img": "assets/suppliers/lingbiao-1.jpg"
+      },
+      {
+        "name": "lingbiao product 2",
+        "img": "assets/suppliers/lingbiao-2.jpg"
+      },
+      {
+        "name": "lingbiao product 3",
+        "img": "assets/suppliers/lingbiao-3.jpg"
+      },
+      {
+        "name": "lingbiao product 4",
+        "img": "assets/suppliers/lingbiao-4.jpg"
+      },
+      {
+        "name": "lingbiao product 5",
+        "img": "assets/suppliers/lingbiao-5.jpg"
+      }
+    ],
+    "link": "https://lbsinteredstone.com/",
+    "contact": "info@lbsinteredstone.com · WhatsApp +86 133 0335 8455",
+    "photoNote": "Photos from LingBiao official site"
+  },
+  {
+    "id": "boss",
+    "country": "China",
+    "name": "BOSS Ceramics",
+    "loc": "Foshan Nanzhuang, Guangdong",
+    "price": "$25–60 / m²",
+    "priceNote": "Foshan mid-band",
+    "moq": "Ask (slab + furniture stock)",
+    "moq30": "Possible if stock — ask",
+    "moq30Badge": "ask",
+    "lead": "Ask",
+    "size": "Large format · 20mm 2CM FULL BODY",
+    "slabWt": "~240–255 kg",
+    "load40": "~100+ slabs / ~27 t",
+    "freight": "Foshan/Huangpu → EU/Africa ~$2.4k–$5.3k / 40ft",
+    "pigment": "Body hue matched to face (verify vein)",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Verify through-vein",
+    "vein": "2CM full body — confirm vein continuity",
+    "veinBadge": "ask",
+    "veinBadgeText": "Ask cut edge",
+    "construction": "Pressed sintered slab",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Pressed body",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "colour",
+    "colours": [],
+    "link": "https://www.boss-sinteredstone.com/list_26/",
+    "contact": "sales@bossceramics.com",
+    "photoNote": "Supplier site timed out during capture — open their 2CM FULL BODY gallery for live product photos/video",
+    "galleryOnly": true
+  },
+  {
+    "id": "dektop",
+    "country": "China",
+    "name": "DEKTOP / Yiying",
+    "loc": "Foshan Nanhai, Guangdong",
+    "price": "$16–26 / m²",
+    "priceNote": "Published FOB Foshan",
+    "moq": "~113 m²",
+    "moq30": "No on listed MOQ — negotiate stock",
+    "moq30Badge": "no",
+    "lead": "~7 days custom claim",
+    "size": "1600×3200×20mm",
+    "slabWt": "~245–255 kg",
+    "load40": "~100–110 slabs / ~27 t",
+    "freight": "Foshan 40GP → UK ~$4.2k–$5.3k",
+    "pigment": "Full-body series — vein claimed inside when cut",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm body pigment",
+    "vein": "Vein-in-body claimed (Sacmi)",
+    "veinBadge": "yes",
+    "veinBadgeText": "Claimed through body",
+    "construction": "Single Sacmi-pressed slab",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Mono press",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "dektop product 1",
+        "img": "assets/suppliers/dektop-1.jpg"
+      },
+      {
+        "name": "dektop product 2",
+        "img": "assets/suppliers/dektop-2.jpg"
+      },
+      {
+        "name": "dektop product 3",
+        "img": "assets/suppliers/dektop-3.jpg"
+      },
+      {
+        "name": "dektop product 4",
+        "img": "assets/suppliers/dektop-4.jpg"
+      },
+      {
+        "name": "dektop product 5",
+        "img": "assets/suppliers/dektop-5.jpg"
+      },
+      {
+        "name": "dektop product 6",
+        "img": "assets/suppliers/dektop-6.jpg"
+      }
+    ],
+    "link": "https://www.sinterstonepro.com/full-body-sintered-stone/",
+    "contact": "jackywan@dektop.cn · WhatsApp +86 131 6896 3213",
+    "photoNote": "Photos from DEKTOP / Yiying product CDN"
+  },
+  {
+    "id": "enming",
+    "country": "China",
+    "name": "Enming Stone",
+    "loc": "Xiamen Siming, Fujian",
+    "price": "$30–70 / m²",
+    "priceNote": "Trader estimate",
+    "moq": "Ask · ~104 pcs / 40GP",
+    "moq30": "Maybe from stock — ask",
+    "moq30Badge": "ask",
+    "lead": "Ask",
+    "size": "1600×3200×20mm",
+    "slabWt": "~250 kg",
+    "load40": "104 pcs / 40GP ≈ 27 t",
+    "freight": "Xiamen ocean 40ft ~$2.5k–$5k",
+    "pigment": "Listed full body through veins",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm",
+    "vein": "Through veins marketing",
+    "veinBadge": "yes",
+    "veinBadgeText": "Through veins claimed",
+    "construction": "Sintered slab via exporter",
+    "constructionBadge": "ask",
+    "constructionBadgeText": "Confirm factory",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "enming product 1",
+        "img": "assets/suppliers/enming-1.png"
+      },
+      {
+        "name": "enming product 2",
+        "img": "assets/suppliers/enming-2.jpg"
+      },
+      {
+        "name": "enming product 3",
+        "img": "assets/suppliers/enming-3.jpg"
+      },
+      {
+        "name": "enming product 4",
+        "img": "assets/suppliers/enming-4.jpg"
+      }
+    ],
+    "link": "https://www.chinaartificialstone.com/20mm-sintered-stone-marble-slabs-1600x3200mm_p482.html",
+    "contact": "info@chinaartificialstone.com · +86 180 4623 9265",
+    "photoNote": "Photos from Enming Stone product pages"
+  },
+  {
+    "id": "jinovation",
+    "country": "China",
+    "name": "Jinovation Stone",
+    "loc": "Xiamen, Fujian",
+    "price": "$40–85 / m²",
+    "priceNote": "Project/wholesale estimate",
+    "moq": "Retail 8 m² · Wholesale 400 · Project 600",
+    "moq30": "Yes possible on retail claim — confirm export packing",
+    "moq30Badge": "yes",
+    "lead": "Ask",
+    "size": "1600×3200 / larger · 20mm",
+    "slabWt": "240–255 kg listed",
+    "load40": "~27 t typical",
+    "freight": "Xiamen 40ft ~$2.5k–$5k",
+    "pigment": "Homogeneous surface-to-core claimed",
+    "pigmentBadge": "yes",
+    "pigmentBadgeText": "Body homogeneity claimed",
+    "vein": "Full-body consistency for edges",
+    "veinBadge": "ask",
+    "veinBadgeText": "Confirm vein grade",
+    "construction": "High-pressure sintered mono · resin-free",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Mono sintered",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Density ~2.8 · request Mohs",
+    "edgeRef": "colour",
+    "colours": [
+      {
+        "name": "jinovation product 1",
+        "img": "assets/suppliers/jinovation-1.jpg"
+      },
+      {
+        "name": "jinovation product 2",
+        "img": "assets/suppliers/jinovation-2.jpg"
+      },
+      {
+        "name": "jinovation product 3",
+        "img": "assets/suppliers/jinovation-3.jpg"
+      },
+      {
+        "name": "jinovation product 4",
+        "img": "assets/suppliers/jinovation-4.jpg"
+      }
+    ],
+    "link": "https://www.sinteredstone-factory.com/full-body-sintered-stone/full-body-sintered-stone-slab/20mm-full-body-sintered-stone-slab.html",
+    "contact": "Info@xiamensrs.com · +86 138 6019 1965",
+    "photoNote": "Photos from Jinovation factory site"
+  },
+  {
+    "id": "jinqiang",
+    "country": "China",
+    "name": "Jinqiang",
+    "loc": "Foshan Nanzhuang, Guangdong",
+    "price": "Ask (RMB / export FOB)",
+    "priceNote": "对位通体 aligned through-body",
+    "moq": "Ask agent",
+    "moq30": "Unlikely production — ask showroom stock",
+    "moq30Badge": "ask",
+    "lead": "Ask",
+    "size": "1600×3200×20mm",
+    "slabWt": "~245–255 kg",
+    "load40": "~27 t / 40ft",
+    "freight": "Foshan export corridor",
+    "pigment": "对位通体 — body aligned with surface",
+    "pigmentBadge": "yes",
+    "pigmentBadgeText": "Aligned through-body",
+    "vein": "Aligned through-body process",
+    "veinBadge": "yes",
+    "veinBadgeText": "对位通体",
+    "construction": "Pressed sintered body",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Mono body",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "jinqiang product 1",
+        "img": "assets/suppliers/jinqiang-1.jpeg"
+      },
+      {
+        "name": "jinqiang product 2",
+        "img": "assets/suppliers/jinqiang-2.jpeg"
+      },
+      {
+        "name": "jinqiang product 3",
+        "img": "assets/suppliers/jinqiang-3.jpeg"
+      }
+    ],
+    "link": "https://www.gdjinqiang.com/product2-114-379-1218-2.html",
+    "contact": "400-020-8878",
+    "photoNote": "Photos from Jinqiang product uploads"
+  },
+  {
+    "id": "nabel",
+    "country": "China",
+    "name": "NABEL",
+    "loc": "Zhejiang / East China",
+    "price": "$50–120 / m²",
+    "priceNote": "Premium veins-alignment",
+    "moq": "Ask export desk",
+    "moq30": "No typical brand MOQ — distributor may have stock",
+    "moq30Badge": "no",
+    "lead": "Ask",
+    "size": "Large format · 20mm programme",
+    "slabWt": "~248 kg class",
+    "load40": "Container programme",
+    "freight": "East China ports",
+    "pigment": "Veins-alignment full-body tech",
+    "pigmentBadge": "yes",
+    "pigmentBadgeText": "Full-body tech",
+    "vein": "Aligned veins claimed",
+    "veinBadge": "yes",
+    "veinBadgeText": "Veins-alignment",
+    "construction": "Sintered mono brand process",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Brand mono",
+    "water": "Request official TDS",
+    "flexural": "Request official TDS",
+    "mohs": "Request official TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "nabel product 1",
+        "img": "assets/suppliers/nabel-1.png"
+      },
+      {
+        "name": "nabel product 2",
+        "img": "assets/suppliers/nabel-2.png"
+      },
+      {
+        "name": "nabel product 3",
+        "img": "assets/suppliers/nabel-3.png"
+      }
+    ],
+    "link": "https://en.nabel.cc/",
+    "contact": "Via NABEL export / agent",
+    "photoNote": "Photos from NABEL official site"
+  },
+  {
+    "id": "xiyou",
+    "country": "China",
+    "name": "XiYou (Alibaba)",
+    "loc": "Guangdong / Foshan",
+    "price": "$9.90–15.90 / m²",
+    "priceNote": "Listed tiers — verify quality hard",
+    "moq": "100–500+ m²",
+    "moq30": "No on listed breaks",
+    "moq30Badge": "no",
+    "lead": "7–20 days",
+    "size": "1600×3200×20mm",
+    "slabWt": "Assume ~250 kg — confirm",
+    "load40": "Ask loading plan",
+    "freight": "Foshan ocean band",
+    "pigment": "Listed full body — unverified",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "High risk",
+    "vein": "Unverified at this price",
+    "veinBadge": "no",
+    "veinBadgeText": "Suspect surface / colour body",
+    "construction": "Claimed sintered",
+    "constructionBadge": "ask",
+    "constructionBadgeText": "Verify",
+    "water": "≤0.5% claimed",
+    "flexural": "Not published",
+    "mohs": "Not published",
+    "edgeRef": "surface",
+    "colours": [
+      {
+        "name": "xiyou product 1",
+        "img": "assets/suppliers/xiyou-1.jpg"
+      },
+      {
+        "name": "xiyou product 2",
+        "img": "assets/suppliers/xiyou-2.jpg"
+      },
+      {
+        "name": "xiyou product 3",
+        "img": "assets/suppliers/xiyou-3.jpg"
+      }
+    ],
+    "link": "https://www.alibaba.com/product-detail/Wholesale-Full-Body-Sintered-Stone-Slab_1601717859540.html",
+    "contact": "Via Alibaba · XiYou",
+    "photoNote": "Photos from XiYou Alibaba listing gallery"
+  },
+  {
+    "id": "lumina",
+    "country": "India",
+    "name": "Lumina Tile",
+    "loc": "Rajkot / Morbi ecosystem, Gujarat",
+    "price": "$25–45 / m²",
+    "priceNote": "India sintered/large slab export band",
+    "moq": "Usually 1 container",
+    "moq30": "No typical — ask graded stock",
+    "moq30Badge": "no",
+    "lead": "~20–45 days production",
+    "size": "Large slabs incl. 1600×3200 · 6–20mm",
+    "slabWt": "~240–255 kg @20mm",
+    "load40": "~400–800 m² class",
+    "freight": "Mundra/Kandla 40ft",
+    "pigment": "Curates Morbi full-body / large slabs",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm factory SKU",
+    "vein": "Must lock through-vein SKU",
+    "veinBadge": "ask",
+    "veinBadgeText": "Edge photo mandatory",
+    "construction": "Pressed porcelain / sintered from partner plants",
+    "constructionBadge": "ask",
+    "constructionBadgeText": "Confirm process",
+    "water": "Often <0.1% on premium",
+    "flexural": "Request TDS",
+    "mohs": "Often Mohs 6–7 claimed",
+    "edgeRef": "colour",
+    "colours": [
+      {
+        "name": "lumina product 1",
+        "img": "assets/suppliers/lumina-1.webp"
+      },
+      {
+        "name": "lumina product 2",
+        "img": "assets/suppliers/lumina-2.webp"
+      },
+      {
+        "name": "lumina product 3",
+        "img": "assets/suppliers/lumina-3.webp"
+      },
+      {
+        "name": "lumina product 4",
+        "img": "assets/suppliers/lumina-4.webp"
+      }
+    ],
+    "link": "https://luminatile.com/",
+    "contact": "export@luminatile.com · +91 98984 27293",
+    "photoNote": "Photos from Lumina Tile design library"
+  },
+  {
+    "id": "simpolo",
+    "country": "India",
+    "name": "Simpolo Ceramics",
+    "loc": "Morbi, Gujarat",
+    "price": "$20–40 / m²",
+    "priceNote": "Brand factory; confirm 20mm slab line",
+    "moq": "Usually container",
+    "moq30": "No production — dealer stock maybe",
+    "moq30Badge": "no",
+    "lead": "Ask export",
+    "size": "Large formats + outdoor 20mm lines",
+    "slabWt": "Confirm per SKU",
+    "load40": "Container",
+    "freight": "Mundra export",
+    "pigment": "Strong on technical / full-body categories",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Lock full-body SKU",
+    "vein": "Not all lines are through-vein",
+    "veinBadge": "ask",
+    "veinBadgeText": "Ask cut edge",
+    "construction": "In-house ceramic production",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Own plant",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "colour",
+    "colours": [
+      {
+        "name": "simpolo product 1",
+        "img": "assets/suppliers/simpolo-1.jpg"
+      },
+      {
+        "name": "simpolo product 2",
+        "img": "assets/suppliers/simpolo-2.jpg"
+      },
+      {
+        "name": "simpolo product 3",
+        "img": "assets/suppliers/simpolo-3.jpg"
+      }
+    ],
+    "link": "https://www.simpolo.com/",
+    "contact": "customercare@simpolo.net · +91 72289 22222",
+    "photoNote": "Photos from Simpolo product library"
+  },
+  {
+    "id": "lgroup",
+    "country": "India",
+    "name": "L-Group International",
+    "loc": "Morbi, Gujarat",
+    "price": "$18–35 / m²",
+    "priceNote": "Ask 20mm availability (often 9/15mm listed)",
+    "moq": "1 container",
+    "moq30": "No",
+    "moq30Badge": "no",
+    "lead": "Ask",
+    "size": "Up to 1600×3200",
+    "slabWt": "Confirm thickness",
+    "load40": "1×20ft or 40ft",
+    "freight": "India FCL",
+    "pigment": "Colour body & full body variants",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm 20mm",
+    "vein": "Full body ≠ always through-vein",
+    "veinBadge": "ask",
+    "veinBadgeText": "Edge photo",
+    "construction": "Pressed porcelain slabs",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Pressed porcelain",
+    "water": "≤0.05% listed",
+    "flexural": "Breaking ≥2000N listed",
+    "mohs": "Mohs 6–7 listed",
+    "edgeRef": "colour",
+    "colours": [
+      {
+        "name": "lgroup product 1",
+        "img": "assets/suppliers/lgroup-1.webp"
+      },
+      {
+        "name": "lgroup product 2",
+        "img": "assets/suppliers/lgroup-2.webp"
+      }
+    ],
+    "link": "https://lgroup.in/collection/slab-tiles.html",
+    "contact": "Via L-Group export form",
+    "photoNote": "Photos from L-Group catalogues"
+  },
+  {
+    "id": "anatolia",
+    "country": "Turkey",
+    "name": "Anatolia · Aeterna",
+    "loc": "Aliağa, İzmir · HQ Vaughan, Canada",
+    "price": "$45–95 / m²",
+    "priceNote": "Above China, below Italy retail",
+    "moq": "Distributor / project",
+    "moq30": "Via distributor stock possible",
+    "moq30Badge": "ask",
+    "lead": "Stock programmes",
+    "size": "160/162×320/322 cm · 6/12/20mm",
+    "slabWt": "~248 kg @20mm",
+    "load40": "Anatolia network",
+    "freight": "Turkey→EU short sea often cheaper",
+    "pigment": "Digital + sintered body — confirm per colour",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm per colour",
+    "vein": "Collection-dependent",
+    "veinBadge": "ask",
+    "veinBadgeText": "Ask edge sample",
+    "construction": "Sintered slab from İzmir plant",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Mono sintered plant",
+    "water": "<0.08% (6/12mm TDS)",
+    "flexural": "MOR ~50 N/mm² (12mm)",
+    "mohs": "Request 20mm TDS",
+    "edgeRef": "colour",
+    "colours": [
+      {
+        "name": "anatolia product 1",
+        "img": "assets/suppliers/anatolia-1.jpg"
+      },
+      {
+        "name": "anatolia product 2",
+        "img": "assets/suppliers/anatolia-2.jpg"
+      },
+      {
+        "name": "anatolia product 3",
+        "img": "assets/suppliers/anatolia-3.jpg"
+      },
+      {
+        "name": "anatolia product 4",
+        "img": "assets/suppliers/anatolia-4.jpg"
+      },
+      {
+        "name": "anatolia product 5",
+        "img": "assets/suppliers/anatolia-5.jpg"
+      }
+    ],
+    "video": "assets/suppliers/anatolia-marble.mp4",
+    "link": "https://aeternasurfaces.com/en/inspirations/marble-inspiration",
+    "contact": "info@aeternasurfaces.com · İzmir +90 232 520 7300",
+    "photoNote": "Photos + marble video from Aeterna official site"
+  },
+  {
+    "id": "slabstone",
+    "country": "Vietnam",
+    "name": "Slabstone Trungdo",
+    "loc": "Nghi Văn, Nghệ An",
+    "price": "$28–55 / m²",
+    "priceNote": "Estimate — quote required",
+    "moq": "Project / distributor",
+    "moq30": "Unlikely production — ask stock",
+    "moq30Badge": "no",
+    "lead": "Ask",
+    "size": "Up to 1600×2400 · 20mm",
+    "slabWt": "Ask (catalogue cites ~140 kg some 20mm sizes)",
+    "load40": "Ask packing plan",
+    "freight": "Vietnam→EU competitive on some lanes",
+    "pigment": "Sacmi Continua+ mineral body",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Confirm Veintech body",
+    "vein": "Veintech — verify cross-section",
+    "veinBadge": "ask",
+    "veinBadgeText": "Ask edge photo",
+    "construction": "Sintered Continua+ mono body",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Continua+ mono",
+    "water": "0.04% listed",
+    "flexural": "MOR 45 MPa listed",
+    "mohs": "Request",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "slabstone product 1",
+        "img": "assets/suppliers/slabstone-1.jpg"
+      },
+      {
+        "name": "slabstone product 2",
+        "img": "assets/suppliers/slabstone-2.png"
+      },
+      {
+        "name": "slabstone product 3",
+        "img": "assets/suppliers/slabstone-3.png"
+      }
+    ],
+    "link": "https://slabstone.vn/",
+    "contact": "slabstone@trungdo.vn · +84 964 726 568",
+    "photoNote": "Photos from Slabstone Vietnam site"
+  },
+  {
+    "id": "laminam",
+    "country": "Italy",
+    "name": "Laminam 20+",
+    "loc": "Italy (global distribution)",
+    "price": "$90–180+ / m²",
+    "priceNote": "Premium published brand",
+    "moq": "Distributor / fabricator stock",
+    "moq30": "Yes via distributor stock",
+    "moq30Badge": "yes",
+    "lead": "Stock dependent",
+    "size": "1620×3240 · 20.5mm (20+)",
+    "slabWt": "~50.4 kg/m² → ~265 kg",
+    "load40": "Distributor logistics",
+    "freight": "EU inland if buying in Europe",
+    "pigment": "Full-body porcelain stoneware",
+    "pigmentBadge": "yes",
+    "pigmentBadgeText": "Full-body porcelain",
+    "vein": "Collection-dependent",
+    "veinBadge": "ask",
+    "veinBadgeText": "Check collection",
+    "construction": "Ceramic body + fiberglass mesh on back (20+)",
+    "constructionBadge": "ask",
+    "constructionBadgeText": "Mesh-backed 20+",
+    "water": "≤0.1%",
+    "flexural": "~50 MPa MOR",
+    "mohs": "Request",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "laminam product 1",
+        "img": "assets/suppliers/laminam-1.webp"
+      },
+      {
+        "name": "laminam product 2",
+        "img": "assets/suppliers/laminam-2.webp"
+      },
+      {
+        "name": "laminam product 3",
+        "img": "assets/suppliers/laminam-3.webp"
+      }
+    ],
+    "link": "https://www.laminam.com/",
+    "contact": "Via Laminam distributor",
+    "photoNote": "Photos from Laminam CDN"
+  },
+  {
+    "id": "neolith",
+    "country": "Spain",
+    "name": "Neolith",
+    "loc": "Spain (TheSize) · global",
+    "price": "$100–200+ / m²",
+    "priceNote": "Ultra-premium sintered",
+    "moq": "Distributor slab sales",
+    "moq30": "Yes via stockists",
+    "moq30Badge": "yes",
+    "lead": "Stock",
+    "size": "3200×1600 class · 6/12/20mm",
+    "slabWt": "~20mm ≈ 50 kg/m² class",
+    "load40": "Distributor",
+    "freight": "EU distribution",
+    "pigment": "Sintered mineral body · design-dependent",
+    "pigmentBadge": "ask",
+    "pigmentBadgeText": "Per colour method",
+    "vein": "Named collections vary",
+    "veinBadge": "ask",
+    "veinBadgeText": "Approve cut sample",
+    "construction": "Sintered slab",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Sintered mono brand",
+    "water": "~0.01–0.1%",
+    "flexural": "MOR often >45 N/mm²",
+    "mohs": "Request TDS",
+    "edgeRef": "colour",
+    "colours": [
+      {
+        "name": "neolith product 1",
+        "img": "assets/suppliers/neolith-1.jpg"
+      },
+      {
+        "name": "neolith product 2",
+        "img": "assets/suppliers/neolith-2.jpg"
+      },
+      {
+        "name": "neolith product 3",
+        "img": "assets/suppliers/neolith-3.jpg"
+      },
+      {
+        "name": "neolith product 4",
+        "img": "assets/suppliers/neolith-4.jpg"
+      }
+    ],
+    "link": "https://www.neolith.com/",
+    "contact": "Via Neolith national distributor",
+    "photoNote": "Photos from Neolith Storyblok CDN"
+  },
+  {
+    "id": "paradyz",
+    "country": "Poland",
+    "name": "Paradyż TRI-D",
+    "loc": "Poland",
+    "price": "$55–110 / m²",
+    "priceNote": "EU full-body TRI-D 20mm",
+    "moq": "Distributor",
+    "moq30": "Likely via EU stock",
+    "moq30Badge": "yes",
+    "lead": "EU stock",
+    "size": "1600×3200 & 1230×3200 · 12 & 20mm",
+    "slabWt": "~240–260 kg",
+    "load40": "EU truck",
+    "freight": "Europe road freight for small lots",
+    "pigment": "Full-body colouring",
+    "pigmentBadge": "yes",
+    "pigmentBadgeText": "Full-body colouring",
+    "vein": "Selected TRI-D 20mm veins in cross-section",
+    "veinBadge": "yes",
+    "veinBadgeText": "Cross-section veins (selected)",
+    "construction": "Sintered TRI-D body",
+    "constructionBadge": "yes",
+    "constructionBadgeText": "Full-body sintered",
+    "water": "Request TDS",
+    "flexural": "Request TDS",
+    "mohs": "Request TDS",
+    "edgeRef": "through",
+    "colours": [
+      {
+        "name": "paradyz product 1",
+        "img": "assets/suppliers/paradyz-1.jpg"
+      },
+      {
+        "name": "paradyz product 2",
+        "img": "assets/suppliers/paradyz-2.jpg"
+      }
+    ],
+    "link": "https://www.paradyz.com/",
+    "contact": "Via Paradyż export / EU distributor",
+    "photoNote": "Photos from Paradyż TRI-D product library"
+  }
+]

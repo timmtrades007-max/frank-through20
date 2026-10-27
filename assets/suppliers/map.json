@@ -1,0 +1,93 @@
+{
+  "anatolia": [
+    "assets/suppliers/anatolia-1.jpg",
+    "assets/suppliers/anatolia-2.jpg",
+    "assets/suppliers/anatolia-3.jpg",
+    "assets/suppliers/anatolia-4.jpg",
+    "assets/suppliers/anatolia-5.jpg",
+    "assets/suppliers/anatolia-6.jpg",
+    "assets/suppliers/anatolia-marble.mp4"
+  ],
+  "dektop": [
+    "assets/suppliers/dektop-1.jpg",
+    "assets/suppliers/dektop-2.jpg",
+    "assets/suppliers/dektop-3.jpg",
+    "assets/suppliers/dektop-4.jpg",
+    "assets/suppliers/dektop-5.jpg",
+    "assets/suppliers/dektop-6.jpg"
+  ],
+  "eastphenix": [
+    "assets/suppliers/eastphenix-1.jpg",
+    "assets/suppliers/eastphenix-2.jpg",
+    "assets/suppliers/eastphenix-3.jpg"
+  ],
+  "enming": [
+    "assets/suppliers/enming-1.png",
+    "assets/suppliers/enming-2.jpg",
+    "assets/suppliers/enming-3.jpg",
+    "assets/suppliers/enming-4.jpg"
+  ],
+  "jinovation": [
+    "assets/suppliers/jinovation-1.jpg",
+    "assets/suppliers/jinovation-2.jpg",
+    "assets/suppliers/jinovation-3.jpg",
+    "assets/suppliers/jinovation-4.jpg"
+  ],
+  "jinqiang": [
+    "assets/suppliers/jinqiang-1.jpeg",
+    "assets/suppliers/jinqiang-2.jpeg",
+    "assets/suppliers/jinqiang-3.jpeg"
+  ],
+  "laminam": [
+    "assets/suppliers/laminam-1.webp",
+    "assets/suppliers/laminam-2.webp",
+    "assets/suppliers/laminam-3.webp"
+  ],
+  "lgroup": [
+    "assets/suppliers/lgroup-1.webp",
+    "assets/suppliers/lgroup-2.webp"
+  ],
+  "lingbiao": [
+    "assets/suppliers/lingbiao-1.jpg",
+    "assets/suppliers/lingbiao-2.jpg",
+    "assets/suppliers/lingbiao-3.jpg",
+    "assets/suppliers/lingbiao-4.jpg",
+    "assets/suppliers/lingbiao-5.jpg"
+  ],
+  "lumina": [
+    "assets/suppliers/lumina-1.webp",
+    "assets/suppliers/lumina-2.webp",
+    "assets/suppliers/lumina-3.webp",
+    "assets/suppliers/lumina-4.webp"
+  ],
+  "nabel": [
+    "assets/suppliers/nabel-1.png",
+    "assets/suppliers/nabel-2.png",
+    "assets/suppliers/nabel-3.png"
+  ],
+  "neolith": [
+    "assets/suppliers/neolith-1.jpg",
+    "assets/suppliers/neolith-2.jpg",
+    "assets/suppliers/neolith-3.jpg",
+    "assets/suppliers/neolith-4.jpg"
+  ],
+  "paradyz": [
+    "assets/suppliers/paradyz-1.jpg",
+    "assets/suppliers/paradyz-2.jpg"
+  ],
+  "simpolo": [
+    "assets/suppliers/simpolo-1.jpg",
+    "assets/suppliers/simpolo-2.jpg",
+    "assets/suppliers/simpolo-3.jpg"
+  ],
+  "slabstone": [
+    "assets/suppliers/slabstone-1.jpg",
+    "assets/suppliers/slabstone-2.png",
+    "assets/suppliers/slabstone-3.png"
+  ],
+  "xiyou": [
+    "assets/suppliers/xiyou-1.jpg",
+    "assets/suppliers/xiyou-2.jpg",
+    "assets/suppliers/xiyou-3.jpg"
+  ]
+}

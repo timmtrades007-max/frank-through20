@@ -28,11 +28,22 @@ a{color:inherit}button{font:inherit;cursor:pointer;border:0;background:none}
 .hero h1{max-width:18ch;font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(1.3rem,2.5vw,1.9rem);margin-bottom:.7rem;opacity:0;animation:rise .9s .25s ease forwards}
 .hero .lead{max-width:42ch;color:rgba(232,255,251,.72);font-weight:300;margin-bottom:1.6rem;opacity:0;animation:rise .9s .4s ease forwards}
 .cta-row{display:flex;flex-wrap:wrap;gap:.7rem;opacity:0;animation:rise .9s .55s ease forwards}
-.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.85rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:500;transition:transform .2s}
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.85rem 1.2rem;border-radius:999px;text-decoration:none;font-weight:500;transition:transform .2s;cursor:pointer}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:var(--teal);color:#04110f}
 .btn-ghost{background:rgba(45,212,191,.08);color:var(--ink);border:1px solid rgba(45,212,191,.35)}
 .btn-line{border:1px solid rgba(45,212,191,.35);color:var(--ink)}
+.btn-hot{background:linear-gradient(135deg,#2dd4bf,#14b8a6);color:#04110f;font-weight:600;box-shadow:0 0 0 1px rgba(45,212,191,.4),0 12px 40px rgba(45,212,191,.25)}
+.float-enquire{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;display:flex;flex-direction:column;gap:.55rem;align-items:flex-end}
+.float-enquire .btn{box-shadow:var(--shadow)}
+.enquire-panel{padding:1.25rem;margin-top:1rem}
+.enquire-panel h3{font-family:Fraunces,Georgia,serif;font-size:1.35rem;margin-bottom:.35rem;color:var(--teal)}
+.enquire-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.45rem;margin:1rem 0}
+.enquire-list label{display:flex;gap:.55rem;align-items:flex-start;padding:.7rem .8rem;border-radius:12px;background:rgba(45,212,191,.05);border:1px solid rgba(45,212,191,.12);font-size:.86rem;cursor:pointer}
+.enquire-list input{margin-top:.2rem;accent-color:var(--teal)}
+.enquire-list .meta{font-size:.75rem;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:5.5rem;transform:translateX(-50%);background:#042f2e;border:1px solid var(--teal);color:var(--ink);padding:.85rem 1.2rem;border-radius:999px;z-index:70;opacity:0;pointer-events:none;transition:opacity .25s}
+.toast.show{opacity:1}
 .meta-chip{position:absolute;top:1.2rem;right:1.2rem;padding:.55rem .9rem;border-radius:999px;background:rgba(0,0,0,.55);border:1px solid rgba(45,212,191,.3);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;opacity:0;animation:rise .8s .7s ease forwards}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .dock{position:sticky;top:0;z-index:40;backdrop-filter:blur(16px);background:rgba(5,8,8,.82);border-bottom:1px solid var(--line)}
@@ -133,13 +144,18 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.84rem;text-align:center
     <h1>Each supplier shows their own product photos.</h1>
     <p class="lead">20mm whole-body sintered stone brief for Frank — pigment, vein-through, mono press, lab numbers, MOQ, freight. Colours come from each factory’s own gallery.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#studio">Open supplier studio</a>
-      <a class="btn btn-ghost" href="#edges">Vein edge school</a>
+      <button class="btn btn-hot" type="button" id="enquire-all-hero">Enquire all suppliers — 1 click</button>
+      <a class="btn btn-ghost" href="#studio">Open supplier studio</a>
+      <a class="btn btn-ghost" href="#enquire">Customise list</a>
     </div>
   </div>
 </header>
+<div class="float-enquire">
+  <button class="btn btn-hot" type="button" id="enquire-all-float">✉ Enquire all</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
 <nav class="dock"><div class="wrap dock-inner">
-  <a href="#frank">Checklist</a><a href="#edges">Edge photos</a><a href="#ship">Weight & freight</a><a href="#studio">Suppliers</a><a href="#matrix">Compare</a><a href="#ask">RFQ</a>
+  <a href="#frank">Checklist</a><a href="#edges">Edge photos</a><a href="#ship">Weight & freight</a><a href="#studio">Suppliers</a><a href="#matrix">Compare</a><a href="#enquire">Enquire all</a><a href="#ask">RFQ</a>
 </div></nav>
 <section id="frank"><div class="wrap">
   <div class="kicker">For Frank</div>
@@ -194,19 +210,37 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.84rem;text-align:center
   <div class="matrix-wrap"><table class="matrix"><thead><tr><th>Supplier</th><th>Country</th><th>Vein</th><th>30 m²?</th><th>MOQ</th><th>FOB</th><th>Slab wt</th><th>Freight</th><th>Labs</th></tr></thead><tbody id="matrix-body"></tbody></table></div>
   <div class="footnote">Product photos are captured from each supplier’s own website/CDN for Frank’s brief. Always request a fresh cut-edge photo of the exact locked colour before deposit.</div>
 </div></section>
+<section id="enquire"><div class="wrap">
+  <div class="kicker">One-click outreach</div>
+  <h2 class="title">Send the same enquiry to every supplier</h2>
+  <p class="sub">One click opens your email app with the RFQ ready and all selected supplier emails in BCC. WhatsApp opens for numbers we have. Alibaba / distributor-only brands stay as manual links.</p>
+  <div class="panel enquire-panel">
+    <h3>Who gets this enquiry?</h3>
+    <p style="color:var(--muted);font-size:.9rem;margin-bottom:.5rem">Tick who to include. Default = everyone with an email.</p>
+    <div class="enquire-list" id="enquire-list"></div>
+    <div class="detail-actions">
+      <button class="btn btn-hot" type="button" id="enquire-all-panel">Send enquiry to selected</button>
+      <button class="btn btn-ghost" type="button" id="enquire-whatsapp">Also open WhatsApps</button>
+      <button class="btn btn-line" type="button" id="select-all-email">Select all with email</button>
+    </div>
+    <p id="enquire-summary" class="photo-note" style="margin-top:1rem"></p>
+  </div>
+</div></section>
 <section id="ask"><div class="wrap">
-  <div class="kicker">RFQ</div><h2 class="title">Copy this to every supplier</h2>
-  <div class="panel"><p id="rfq-text" style="white-space:pre-wrap;line-height:1.55">Need 1600×3200×20mm sintered stone — whole body with vein throughout thickness.
+  <div class="kicker">RFQ</div><h2 class="title">Message that gets sent</h2>
+  <div class="panel"><p id="rfq-text" style="white-space:pre-wrap;line-height:1.55">Need 1600×3200×20mm sintered stone — whole body with vein throughout thickness (through-body / 对位通体).
 
 Please confirm:
 1) Is pigment mixed into the raw material body, or only a printed/glazed surface layer?
 2) Do veins continue through the full 20mm? Send cut-edge photos of this exact colour.
 3) Single pressed mono body, or laminated / mesh-backed / layered?
-4) TDS: water absorption, flexural/MOR, Mohs.
+4) TDS: water absorption, flexural/MOR, Mohs hardness.
 5) Can you supply ~30 m² from stock, or is MOQ higher?
 6) FOB price, packing, slab weight, container loading, ocean freight to our port.
 
-Do not quote surface-only inkjet or coloured body without vein-through.</p>
+Do not quote surface-only inkjet or coloured body without vein-through.
+
+Sent via THROUGH·20 brief for Frank.</p>
   <div class="detail-actions"><button class="btn btn-primary" id="copy-rfq" type="button">Copy RFQ</button></div></div>
 </div></section>
 <footer>THROUGH·20 · Brief for Frank · Live: https://timmtrades007-max.github.io/frank-through20/</footer>
@@ -259,6 +293,8 @@ function renderDetail(s){
   <div class="swatches">\${media(s)}</div>
   <div class="detail-actions">
     <a class="btn btn-primary" href="\${s.link}" target="_blank" rel="noopener">Open supplier gallery</a>
+    \${s.email?\`<a class="btn btn-hot" href="mailto:\${s.email}?subject=\${encodeURIComponent(SUBJECT)}&body=\${encodeURIComponent(rfqBody())}">Email this supplier</a>\`:''}
+    \${s.whatsapp?\`<a class="btn btn-ghost" href="https://wa.me/\${s.whatsapp}?text=\${encodeURIComponent(rfqBody())}" target="_blank" rel="noopener">WhatsApp</a>\`:''}
     <button class="btn btn-line" type="button" id="copy-one">Copy contact + ask</button>
   </div>\`;
   document.getElementById('copy-one').onclick=()=>{navigator.clipboard.writeText(\`\${s.name} (\${s.country} · \${s.loc})\\n\${s.contact}\\n\${s.link}\\n\\n20mm whole-body vein-through. Confirm body pigment vs surface print, mono press vs laminated, TDS, cut-edge photos, 30 m² possibility, slab weight, freight.\`);const b=document.getElementById('copy-one');b.textContent='Copied';setTimeout(()=>b.textContent='Copy contact + ask',1100)};
@@ -266,11 +302,52 @@ function renderDetail(s){
 function select(id){renderFilters();const list=filtered();const s=list.find(x=>x.id===id)||list[0]||suppliers[0];renderRail(s.id);renderDetail(s)}
 function renderMatrix(){document.getElementById('matrix-body').innerHTML=suppliers.map(s=>\`<tr><td><strong>\${s.name}</strong></td><td>\${s.country}</td><td>\${s.veinBadgeText}</td><td>\${s.moq30Badge==='yes'?'Possible':s.moq30Badge==='no'?'No':'Ask'}</td><td>\${s.moq}</td><td>\${s.price}</td><td>\${s.slabWt}</td><td>\${s.freight}</td><td>\${s.water} · \${s.flexural} · \${s.mohs}</td></tr>\`).join('')}
 document.getElementById('copy-rfq').onclick=()=>{navigator.clipboard.writeText(document.getElementById('rfq-text').textContent);const b=document.getElementById('copy-rfq');b.textContent='Copied';setTimeout(()=>b.textContent='Copy RFQ',1100)};
+const SUBJECT='RFQ: 1600×3200×20mm whole-body sintered stone (vein through)';
+function rfqBody(){return document.getElementById('rfq-text').textContent.trim()}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200)}
+function renderEnquireList(){
+  const box=document.getElementById('enquire-list');
+  box.innerHTML=suppliers.map(s=>{
+    const hasEmail=!!s.email;const hasWa=!!s.whatsapp;
+    const meta=hasEmail?(s.email+(hasWa?' · WhatsApp':'')):(hasWa?'WhatsApp only · open form: '+s.contact:s.contact+' · manual link');
+    return \`<label><input type="checkbox" data-id="\${s.id}" \${hasEmail?'checked':''} /><span><strong>\${s.name}</strong><div class="meta">\${meta}</div></span></label>\`;
+  }).join('');
+  updateEnquireSummary();
+  box.querySelectorAll('input').forEach(i=>i.onchange=updateEnquireSummary);
+}
+function selectedSuppliers(){const ids=[...document.querySelectorAll('#enquire-list input:checked')].map(i=>i.dataset.id);return suppliers.filter(s=>ids.includes(s.id))}
+function updateEnquireSummary(){
+  const sel=selectedSuppliers();
+  const emails=sel.filter(s=>s.email).map(s=>s.email);
+  const wa=sel.filter(s=>s.whatsapp);
+  const manual=sel.filter(s=>!s.email);
+  document.getElementById('enquire-summary').textContent=\`Selected \${sel.length}: \${emails.length} email BCC · \${wa.length} WhatsApp · \${manual.length} need gallery/form click\`;
+}
+function sendEnquireEmail(){
+  const sel=selectedSuppliers();
+  const emails=[...new Set(sel.map(s=>s.email).filter(Boolean))];
+  if(!emails.length){toast('No emails on selection — tick suppliers with email, or open galleries');return}
+  const bcc=emails.join(',');
+  const body=encodeURIComponent(rfqBody());
+  const subject=encodeURIComponent(SUBJECT);
+  window.location.href=\`mailto:?bcc=\${encodeURIComponent(bcc)}&subject=\${subject}&body=\${body}\`;
+  toast(\`Opening mail → BCC \${emails.length} suppliers\`);
+}
+function openWhatsApps(){
+  const wa=selectedSuppliers().filter(s=>s.whatsapp);
+  if(!wa.length){toast('No WhatsApp numbers on selection');return}
+  const text=encodeURIComponent(rfqBody());
+  wa.forEach((s,i)=>setTimeout(()=>window.open(\`https://wa.me/\${s.whatsapp}?text=\${text}\`,'_blank','noopener'),i*450));
+  toast(\`Opening \${wa.length} WhatsApp chat(s)\`);
+}
+document.getElementById('select-all-email').onclick=()=>{document.querySelectorAll('#enquire-list input').forEach(i=>{const s=suppliers.find(x=>x.id===i.dataset.id);i.checked=!!s?.email});updateEnquireSummary()};
+['enquire-all-hero','enquire-all-float','enquire-all-panel'].forEach(id=>document.getElementById(id).onclick=sendEnquireEmail);
+document.getElementById('enquire-whatsapp').onclick=openWhatsApps;
 const links=[...document.querySelectorAll('.dock a')];
 const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-40% 0px -50% 0px'});
 sections.forEach(s=>io.observe(s));
-select(suppliers[0].id);renderMatrix();
+select(suppliers[0].id);renderMatrix();renderEnquireList();
 </script>
 </body></html>`;
 

@@ -43,7 +43,9 @@
     ],
     "link": "https://www.sinteredstonechina.com/sintered-stone-for-full-body/20mm-coloured-body/golden-iris-through-vein-sintered-stone-slab.html",
     "contact": "info@eastphenix.com · +86 138 5999 3895",
-    "photoNote": "Photos from East Phenix product pages"
+    "photoNote": "Photos from East Phenix product pages",
+    "email": "info@eastphenix.com",
+    "whatsapp": "8613859993895"
   },
   {
     "id": "lingbiao",
@@ -97,7 +99,9 @@
     ],
     "link": "https://lbsinteredstone.com/",
     "contact": "info@lbsinteredstone.com · WhatsApp +86 133 0335 8455",
-    "photoNote": "Photos from LingBiao official site"
+    "photoNote": "Photos from LingBiao official site",
+    "email": "info@lbsinteredstone.com",
+    "whatsapp": "8613303358455"
   },
   {
     "id": "boss",
@@ -131,7 +135,9 @@
     "link": "https://www.boss-sinteredstone.com/list_26/",
     "contact": "sales@bossceramics.com",
     "photoNote": "Supplier site timed out during capture — open their 2CM FULL BODY gallery for live product photos/video",
-    "galleryOnly": true
+    "galleryOnly": true,
+    "email": "sales@bossceramics.com",
+    "whatsapp": null
   },
   {
     "id": "dektop",
@@ -189,7 +195,9 @@
     ],
     "link": "https://www.sinterstonepro.com/full-body-sintered-stone/",
     "contact": "jackywan@dektop.cn · WhatsApp +86 131 6896 3213",
-    "photoNote": "Photos from DEKTOP / Yiying product CDN"
+    "photoNote": "Photos from DEKTOP / Yiying product CDN",
+    "email": "jackywan@dektop.cn",
+    "whatsapp": "8613168963213"
   },
   {
     "id": "enming",
@@ -239,7 +247,9 @@
     ],
     "link": "https://www.chinaartificialstone.com/20mm-sintered-stone-marble-slabs-1600x3200mm_p482.html",
     "contact": "info@chinaartificialstone.com · +86 180 4623 9265",
-    "photoNote": "Photos from Enming Stone product pages"
+    "photoNote": "Photos from Enming Stone product pages",
+    "email": "info@chinaartificialstone.com",
+    "whatsapp": "8618046239265"
   },
   {
     "id": "jinovation",
@@ -289,7 +299,9 @@
     ],
     "link": "https://www.sinteredstone-factory.com/full-body-sintered-stone/full-body-sintered-stone-slab/20mm-full-body-sintered-stone-slab.html",
     "contact": "Info@xiamensrs.com · +86 138 6019 1965",
-    "photoNote": "Photos from Jinovation factory site"
+    "photoNote": "Photos from Jinovation factory site",
+    "email": "Info@xiamensrs.com",
+    "whatsapp": "8613860191965"
   },
   {
     "id": "jinqiang",
@@ -335,7 +347,9 @@
     ],
     "link": "https://www.gdjinqiang.com/product2-114-379-1218-2.html",
     "contact": "400-020-8878",
-    "photoNote": "Photos from Jinqiang product uploads"
+    "photoNote": "Photos from Jinqiang product uploads",
+    "email": null,
+    "whatsapp": null
   },
   {
     "id": "nabel",
@@ -381,7 +395,9 @@
     ],
     "link": "https://en.nabel.cc/",
     "contact": "Via NABEL export / agent",
-    "photoNote": "Photos from NABEL official site"
+    "photoNote": "Photos from NABEL official site",
+    "email": null,
+    "whatsapp": null
   },
   {
     "id": "xiyou",
@@ -427,7 +443,10 @@
     ],
     "link": "https://www.alibaba.com/product-detail/Wholesale-Full-Body-Sintered-Stone-Slab_1601717859540.html",
     "contact": "Via Alibaba · XiYou",
-    "photoNote": "Photos from XiYou Alibaba listing gallery"
+    "photoNote": "Photos from XiYou Alibaba listing gallery",
+    "email": null,
+    "whatsapp": null,
+    "alibaba": "https://www.alibaba.com/product-detail/Wholesale-Full-Body-Sintered-Stone-Slab_1601717859540.html"
   },
   {
     "id": "lumina",
@@ -477,7 +496,9 @@
     ],
     "link": "https://luminatile.com/",
     "contact": "export@luminatile.com · +91 98984 27293",
-    "photoNote": "Photos from Lumina Tile design library"
+    "photoNote": "Photos from Lumina Tile design library",
+    "email": "export@luminatile.com",
+    "whatsapp": "919898427293"
   },
   {
     "id": "simpolo",
@@ -523,7 +544,9 @@
     ],
     "link": "https://www.simpolo.com/",
     "contact": "customercare@simpolo.net · +91 72289 22222",
-    "photoNote": "Photos from Simpolo product library"
+    "photoNote": "Photos from Simpolo product library",
+    "email": "customercare@simpolo.net",
+    "whatsapp": null
   },
   {
     "id": "lgroup",
@@ -565,7 +588,9 @@
     ],
     "link": "https://lgroup.in/collection/slab-tiles.html",
     "contact": "Via L-Group export form",
-    "photoNote": "Photos from L-Group catalogues"
+    "photoNote": "Photos from L-Group catalogues",
+    "email": null,
+    "whatsapp": null
   },
   {
     "id": "anatolia",
@@ -620,7 +645,9 @@
     "video": "assets/suppliers/anatolia-marble.mp4",
     "link": "https://aeternasurfaces.com/en/inspirations/marble-inspiration",
     "contact": "info@aeternasurfaces.com · İzmir +90 232 520 7300",
-    "photoNote": "Photos + marble video from Aeterna official site"
+    "photoNote": "Photos + marble video from Aeterna official site",
+    "email": "info@aeternasurfaces.com",
+    "whatsapp": null
   },
   {
     "id": "slabstone",
@@ -666,7 +693,9 @@
     ],
     "link": "https://slabstone.vn/",
     "contact": "slabstone@trungdo.vn · +84 964 726 568",
-    "photoNote": "Photos from Slabstone Vietnam site"
+    "photoNote": "Photos from Slabstone Vietnam site",
+    "email": "slabstone@trungdo.vn",
+    "whatsapp": "84964726568"
   },
   {
     "id": "laminam",
@@ -712,7 +741,9 @@
     ],
     "link": "https://www.laminam.com/",
     "contact": "Via Laminam distributor",
-    "photoNote": "Photos from Laminam CDN"
+    "photoNote": "Photos from Laminam CDN",
+    "email": null,
+    "whatsapp": null
   },
   {
     "id": "neolith",
@@ -762,7 +793,9 @@
     ],
     "link": "https://www.neolith.com/",
     "contact": "Via Neolith national distributor",
-    "photoNote": "Photos from Neolith Storyblok CDN"
+    "photoNote": "Photos from Neolith Storyblok CDN",
+    "email": null,
+    "whatsapp": null
   },
   {
     "id": "paradyz",
@@ -804,6 +837,8 @@
     ],
     "link": "https://www.paradyz.com/",
     "contact": "Via Paradyż export / EU distributor",
-    "photoNote": "Photos from Paradyż TRI-D product library"
+    "photoNote": "Photos from Paradyż TRI-D product library",
+    "email": null,
+    "whatsapp": null
   }
 ]
